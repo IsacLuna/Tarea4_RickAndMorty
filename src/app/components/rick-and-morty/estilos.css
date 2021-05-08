@@ -1,0 +1,17 @@
+img{
+    border-radius: 10%;
+    padding:8px;
+}
+.titulo{
+    font-size:160%;
+    text-align: center;
+}
+.nombre{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.imagen{
+    display: block;
+    margin: auto;
+}

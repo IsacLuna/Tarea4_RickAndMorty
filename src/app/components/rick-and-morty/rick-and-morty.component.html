@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title class="titulo">
+      Rick And Morty 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body">
+  <h1 style="text-align: center;">Ingrese Personaje</h1>
+  <br>
+  <ion-input placeholder=" Nombre del Personaje" [(ngModel)]="Anel" required type="text"> </ion-input>
+  <ion-button expand="block" (click)="guardar()">Buscar</ion-button>
+  <div *ngIf="validacion">
+    <br>
+    <img src="./assets/ayno.jpeg" alt="">
+    <br>
+    <p style="text-align: center;" >No existe ese personaje.</p>
+  </div>
+    
+  <ion-card *ngFor="let Personaje of Personajes">
+    <h1 class="nombre">{{Personaje.name}}</h1>
+    <img class="imagen" src="{{Personaje.image}}">
+    <br>
+  </ion-card>
+
+</ion-content>
